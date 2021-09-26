@@ -1,5 +1,7 @@
 # cpp-vcpkg-starter
 
+This is a fork of cpp-best-practices/cpp_starter_project, using vcpkg instead of conand, and with fewer additional dependencies.
+
 [![Build status](https://ci.appveyor.com/api/projects/status/d1tbhi2frii45rcl/branch/main?svg=true)](https://ci.appveyor.com/project/cpp-best-practices/cpp-starter-project/branch/main)
 ![CMake](https://github.com/cpp-best-practices/cpp_starter_project/workflows/CMake/badge.svg)
 [![codecov](https://codecov.io/gh/cpp-best-practices/cpp_starter_project/branch/main/graph/badge.svg)](https://codecov.io/gh/cpp-best-practices/cpp_starter_project)
