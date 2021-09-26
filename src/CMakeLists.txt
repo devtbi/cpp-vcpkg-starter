@@ -8,6 +8,15 @@ target_link_libraries(
   intro
   PRIVATE project_options
           project_warnings
-          docopt
           fmt::fmt
           spdlog::spdlog)
+
+if(NOT MSVC)
+  target_link_libraries(
+    intro
+    PRIVATE docopt_s)
+else()
+  target_link_libraries(
+    intro
+    PRIVATE docopt)
+endif()
