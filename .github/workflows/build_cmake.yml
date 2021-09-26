@@ -37,6 +37,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Install pip dependencies
+      run: |
+        pip3 install wheel setuptools gcovr
+
     - name: Install / Configure dependencies
       shell: bash
       run: |
