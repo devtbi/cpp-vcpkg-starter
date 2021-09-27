@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
 
-set(VCPKG_PATH "${CMAKE_CURRENT_SOURCE_DIR}/vcpkg" CACHE PATH)
-set(VCPKG_BRANCH "master" CACHE STRING)
+set(VCPKG_PATH "${CMAKE_CURRENT_SOURCE_DIR}/vcpkg" CACHE PATH "vcpkg folder")
+set(VCPKG_BRANCH "master" CACHE STRING "vcpkg branch to checkout if not present")
 
 find_package(Git QUIET)
 if(NOT EXISTS "${VCPKG_PATH}")
