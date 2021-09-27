@@ -1,10 +1,13 @@
 cmake_minimum_required(VERSION 3.15)
 
+set(VCPKG_PATH "${CMAKE_CURRENT_SOURCE_DIR}/vcpkg" CACHE PATH)
+set(VCPKG_BRANCH "master" CACHE STRING)
+
 find_package(Git QUIET)
-if(NOT EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/vcpkg")
+if(NOT EXISTS VCPKG_PATH)
     option(GIT_SUBMODULE "Check submodules during build" ON)
         message(STATUS "Submodule update")
-        execute_process(COMMAND ${GIT_EXECUTABLE} clone -b 2021.05.12 --single-branch  https://github.com/microsoft/vcpkg
+        execute_process(COMMAND ${GIT_EXECUTABLE} clone -b "${VCPKG_BRANCH}" --single-branch  https://github.com/microsoft/vcpkg "${VCPKG_PATH}"
                         WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
                         )
 endif()
