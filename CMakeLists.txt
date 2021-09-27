@@ -4,7 +4,7 @@ set(VCPKG_PATH "${CMAKE_CURRENT_SOURCE_DIR}/vcpkg" CACHE PATH)
 set(VCPKG_BRANCH "master" CACHE STRING)
 
 find_package(Git QUIET)
-if(NOT EXISTS VCPKG_PATH)
+if(NOT EXISTS "${VCPKG_PATH}")
     option(GIT_SUBMODULE "Check submodules during build" ON)
         message(STATUS "Submodule update")
         execute_process(COMMAND ${GIT_EXECUTABLE} clone -b "${VCPKG_BRANCH}" --single-branch  https://github.com/microsoft/vcpkg "${VCPKG_PATH}"
