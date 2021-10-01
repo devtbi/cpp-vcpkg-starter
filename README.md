@@ -4,8 +4,6 @@ This is a fork of cpp-best-practices/cpp_starter_project, using vcpkg instead of
 Some dependencies were also removed.
 
 ![CMake](https://github.com/devtbi/cpp-vcpkg-starter/workflows/CMake/badge.svg)
-[![codecov](https://github.com/devtbi/cpp-vcpkg-starter/branch/main/graph/badge.svg)](https://codecov.io/gh/cpp-best-practices/cpp_starter_project)
-[![Language grade: C++](https://img.shields.io/lgtm/grade/cpp/github/cpp-best-practices/cpp_starter_project)](https://lgtm.com/projects/g/cpp-best-practices/cpp_starter_project/context:cpp)
 
 ## Getting Started
 
@@ -383,12 +381,10 @@ cd ../
 See [Catch2 tutorial](https://github.com/catchorg/Catch2/blob/master/docs/tutorial.md)
 
 ## Fuzz testing
-
 See [libFuzzer Tutorial](https://github.com/google/fuzzing/blob/master/tutorial/libFuzzerTutorial.md)
 
 
 ## Docker Instructions
-
 If you have [Docker](https://www.docker.com/) installed, you can run this
 in your terminal, when the Dockerfile is in your working directory:
 
